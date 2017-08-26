@@ -21,7 +21,7 @@
  
  Name=Q2Music
  
- Exec=(your installation folder)
+ Exec=(your installation folder)/q2music
  
  Icon=(your installation folder)/res/icons/qq_music.png
  
