@@ -11,17 +11,25 @@
  In the installation folder we create a file named "q2music" and input:
  
  #!/bin/bash
+ 
  python (your installation folder)/src/qqmusic.py
  
 # create shortcut
  Sample For Fedora, in /usr/share/applications create a file named "q2music.desktop" and input:
  
  [Desktop Entry]
+ 
  Name=Q2Music
+ 
  Exec=(your installation folder)
+ 
  Icon=(your installation folder)/res/icons/qq_music.png
+ 
  Type=Application
+ 
  Categories=Application;Development
+ 
  Terminal=false
+ 
  StartupNotify=true
  
