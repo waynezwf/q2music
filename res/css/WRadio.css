@@ -1,0 +1,249 @@
+/**
+ * -*- coding: utf-8 -*-
+ * 作者：wayne zhang
+ * 时间：2017-07-29
+ * 说明：窗口样式表文件
+ */
+
+QMainWindow {
+    min-height: 700px;
+    min-width: 1024px;
+}
+
+QFrame, QPushButton, QToolButton, QLineEdit {
+    font-size: 11pt;
+}
+
+QPushButton[font_weight="bold"],
+QToolButton[font_weight="bold"] {
+    font-weight: bold;
+}
+
+
+TopPanel {
+    background-color:#11A551;
+    max-height: 66px;
+}
+TopPanel QLineEdit[class="search_editor"] {
+    background-color: #ffffff;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 16px;
+    border: none;
+    height: 32px;
+    min-width: 300px;
+    color:#555555;
+}
+TopPanel QLabel[class="waiting"] {
+    text-align: center;
+    vertical-align: middle;
+    min-width: 46px;
+    min-height: 46px;
+    max-width: 46px;
+    max-height: 46px;
+}
+TopPanel QPushButton[class="highlight_button"],
+TopPanel QToolButton[class="highlight_button"] {
+    border-radius: 16px;
+    height: 32px;
+    width: 50px;
+    border: none;
+    color: #FFFFFF;
+}
+TopPanel QPushButton[class="highlight_button"]:hover,
+TopPanel QToolButton[class="highlight_button"]:hover {
+    background-color: #14843E;
+}
+
+
+LeftPanel {
+    background-color: #f0f2f1;
+    min-width: 230px;
+}
+LeftPanel QLabel[class="info_label"] {
+    font-size: 9pt;
+    font-weight: bold;
+    color: #999999;
+}
+LeftPanel QPushButton[class="highlight_button"],
+LeftPanel QToolButton[class="highlight_button"] {
+    height: 32px;
+    width: 140px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color:#555555;
+}
+LeftPanel QPushButton[class="highlight_button"]:hover,
+LeftPanel QToolButton[class="highlight_button"]:hover {
+    background-color: #11A551;
+    color: #FFFFFF;
+}
+LeftPanel QPushButton[class="highlight_button"]:pressed,
+LeftPanel QToolButton[class="highlight_button"]:pressed {
+    background-color: #106532;
+}
+
+LeftPanel QPushButton[class="active_highlight_button"],
+LeftPanel QToolButton[class="active_highlight_button"] {
+    height: 32px;
+    width: 140px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: left;
+    background-color: #11A551;
+    color: #FFFFFF;
+}
+
+
+SongTable {
+    border: none;
+    gridline-color: #DFDFDF;
+}
+SongTable::item::selected {
+    background-color: #DDEEDD;
+}
+SongTable QLabel[class="grid_label"] {
+    padding-left: 3px;
+    padding-right: 3px;
+    color:#555555;
+    font-size: 10pt;
+}
+
+
+SearchPanel {
+    background-color: #f0f2f1;
+}
+SearchPanel QPushButton[class="highlight_button"],
+SearchPanel QToolButton[class="highlight_button"] {
+    height: 32px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color:#555555;
+}
+SearchPanel QPushButton[class="highlight_button"]:hover,
+SearchPanel QToolButton[class="highlight_button"]:hover {
+    background-color: #11A551;
+    color: #FFFFFF;
+}
+
+
+PlaylistPanel {
+    background-color: #f0f2f1;
+}
+PlaylistPanel QPushButton[class="highlight_button"],
+PlaylistPanel QToolButton[class="highlight_button"] {
+    height: 32px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color:#555555;
+}
+PlaylistPanel QPushButton[class="highlight_button"]:hover,
+PlaylistPanel QToolButton[class="highlight_button"]:hover {
+    background-color: #11A551;
+    color: #FFFFFF;
+}
+
+
+CachePanel {
+    background-color: #f0f2f1;
+}
+CachePanel QPushButton[class="highlight_button"],
+CachePanel QToolButton[class="highlight_button"] {
+    height: 32px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color:#555555;
+}
+CachePanel QPushButton[class="highlight_button"]:hover,
+CachePanel QToolButton[class="highlight_button"]:hover {
+    background-color: #11A551;
+    color: #FFFFFF;
+}
+
+
+DownloadPanel {
+    background-color: #f0f2f1;
+}
+DownloadPanel QPushButton[class="highlight_button"],
+DownloadPanel QToolButton[class="highlight_button"] {
+    height: 32px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    text-align: left;
+    color:#555555;
+}
+DownloadPanel QPushButton[class="highlight_button"]:hover,
+DownloadPanel QToolButton[class="highlight_button"]:hover {
+    background-color: #11A551;
+    color: #FFFFFF;
+}
+
+
+BottomPanel {
+    background-color:#2b3142;
+}
+BottomPanel QPushButton[class="highlight_button"],
+BottomPanel QToolButton[class="highlight_button"] {
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    color: #FFFFFF;
+}
+BottomPanel QPushButton[class="highlight_button"]:hover,
+BottomPanel QToolButton[class="highlight_button"]:hover {
+    background-color: #3773b1;
+}
+BottomPanel QPushButton[class="highlight_button"]:pressed,
+BottomPanel QToolButton[class="highlight_button"]:pressed {
+    background-color: #2b5a8c;
+}
+BottomPanel QPushButton[play_button="play_button"],
+BottomPanel QToolButton[play_button="play_button"] {
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: #FFFFFF;
+}
+BottomPanel QLabel[class="song_image"] {
+    min-height: 60px;
+    max-height: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+BottomPanel QLabel[class="song_name"] {
+    max-width: 220px;
+    border: none;
+    color: #FFFFFF;
+}
+BottomPanel QLabel[class="song_singer"] {
+    max-width: 90px;
+    border: none;
+    color: #999999;
+}
+BottomPanel QLabel[class="play_time"] {
+    max-width: 68px;
+    border: none;
+    color: #999999;
+}
+BottomPanel QSlider {
+    min-width: 400px;
+    max-width: 400px;
+}
