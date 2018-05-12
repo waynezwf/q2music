@@ -1,5 +1,5 @@
 # q2music
- Q2Music is an online music player.
+ Q2Music is an online music player for Linux Fedora.
 
 # install plugins
  First you need install ffmpeg, PySide, PyAudio and PortAudio.
